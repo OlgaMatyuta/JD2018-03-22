@@ -27,21 +27,20 @@ public class TaskC {
                 }
             }
         } while (!max && !min);
-            for (int i = 0; i < mas.length; i++) {
-                for (int j = 0; j < mas.length; j++) {
-                    System.out.print(mas[i][j] + " ");
-                }
-                System.out.println();
+        for (int[] ma : mas) {
+            for (int j = 0; j < mas.length; j++) {
+                System.out.print(ma[j] + " ");
             }
+            System.out.println();
+        }
         return mas;
     }
 
-    static int step2(int[ ][ ] mas){
+    private static int step2(int[][] mas){
         return 0;
-
     }
 
-    static int[ ][ ] step3(int[ ][ ] mas){
+   private static int[ ][ ] step3(int[ ][ ] mas){
 return null;
     }
 
