@@ -49,8 +49,8 @@ public class Test_jd01_14 {
     @Test(timeout = 1500)
     public void testTaskB() throws Exception {
         Test_jd01_14 run = run("");
-        run.include("words=157"); //слов должно быть 157
-        run.include("marks=32");  //знаков должно быть 32 (исправлено 21.01.2018)
+        run.include("words=157");
+        run.include("marks=32");
         StringBuilder sb = new StringBuilder();
         //читаем файл с числами
         Scanner scanner = new Scanner(new File(dir(Test_jd01_14.class) + "resultTaskB.txt"));
@@ -66,8 +66,7 @@ public class Test_jd01_14 {
         Test_jd01_14 run = run("");
         showDir(dir(Test_jd01_14.class)+"..",run);
         Scanner scanner = new Scanner(new File(dir(Test_jd01_14.class) + "resultTaskC.txt"));
-        //проверка соответствия вывода и содержимого файла отчета resultTaskC.txt
-        scanner.nextLine(); //пропуск dir:..
+        scanner.nextLine();
         while (scanner.hasNext()) {
             run.include(scanner.nextLine());
         }
